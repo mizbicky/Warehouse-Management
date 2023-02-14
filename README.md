@@ -1,14 +1,14 @@
 # Warehouse Management
 
-#This aplication will let add spare parts, malfunction, workers, and devices. 
+This aplication will let add spare parts, malfunction, workers, and devices. 
 
-#When device is in malfuncion state we can add some parts to repair and workers witch will work on it.
+When device is in malfuncion state we can add some parts to repair and workers witch will work on it.
 
-#If device will be repaird quantity of parts will change automaticly.
+If device will be repaird quantity of parts will change automaticly.
 
-#Also if any parts reach min quantity you will get information about it.
+Also if any parts reach min quantity you will get information about it.
 
-#In warehouse view we will have acces to all information about them, name, category, where is it on warehouse and more.
+In warehouse view we will have acces to all information about them, name, category, where is it on warehouse and more.
 
 ## Installation
 
