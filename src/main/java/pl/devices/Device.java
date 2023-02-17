@@ -11,9 +11,37 @@ public class Device {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private long name;
+    private String name;
 
 //    Wiele urzadzen może mieć wiele awarii
-    @ManyToMany(mappedBy = "devices")
+    @OneToMany(mappedBy = "device")
     List<Malfunction> malfunctions;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<Malfunction> getMalfunctions() {
+        return malfunctions;
+    }
+
+    public void setMalfunctions(List<Malfunction> malfunctions) {
+        this.malfunctions = malfunctions;
+    }
+
+
 }
+
+

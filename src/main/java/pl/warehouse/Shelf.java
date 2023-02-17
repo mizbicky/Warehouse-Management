@@ -12,12 +12,37 @@ public class Shelf {
     private long id;
     private String shelf;
 
-    //Wiele półek może mieć jeden regał
-    @ManyToOne
-    Rack rack;
-
     //Jedna część może mieć jedno miejsce w magazynie
     @OneToOne(mappedBy = "shelf")
     Part part;
+
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getShelf() {
+        return shelf;
+    }
+
+    public void setShelf(String shelf) {
+        this.shelf = shelf;
+    }
+
+
+    public Part getPart() {
+        return part;
+    }
+
+    public void setPart(Part part) {
+        this.part = part;
+    }
+
+    
+
 
 }

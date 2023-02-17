@@ -16,7 +16,7 @@ ol {
     list-style-type:none;
     padding:0;
     margin:0;
-    font: size 10px;
+    font-size: 10px;
     height:auto;
     line-height:30px;
     text-align:center;
@@ -95,3 +95,53 @@ ol {
   ol > li:hover > a {
     color:white;
   }
+
+
+.table-malfunction {
+  border-collapse: collapse;
+  width: 100%;
+  /*max-width: 800px;*/
+  margin: 0 auto;
+  color: #fff;
+  word-wrap: break-word;
+}
+
+.table-malfunction thead {
+  background-color: #333;
+  word-wrap: break-word;
+}
+
+.table-malfunction th {
+  text-align: left;
+  padding: 10px;
+  word-wrap: break-word;
+  color: white;
+}
+
+.table-malfunction td {
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+.table-malfunction tr:nth-child(even) {
+  background-color: #444;
+}
+
+.table-malfunction tr:hover {
+  background-color: #555;
+}
+
+.table-malfunction button {
+  padding: 5px 10px;
+  background-color: #666;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+button a {
+  text-decoration: none;
+}
+
+.table-malfunction button:hover {
+  background-color: #888;
+}

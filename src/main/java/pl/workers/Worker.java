@@ -14,9 +14,13 @@ public class Worker {
     private String name;
     private String surname;
 
-    //Wiele awarii może mieć wiele pracowników
-    @ManyToMany(mappedBy = "workers")
+    private String description;
+
+    //Jeden zgłaszający może mieć wiele awarii
+    @OneToMany(mappedBy = "worker")
     List<Malfunction> malfunctions;
+
+
 
     public long getId() {
         return id;
@@ -37,4 +41,26 @@ public class Worker {
     public void setSurname(String surname) {
         this.surname = surname;
     }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public List<Malfunction> getMalfunctions() {
+        return malfunctions;
+    }
+
+    public void setMalfunctions(List<Malfunction> malfunctions) {
+        this.malfunctions = malfunctions;
+    }
+
+
 }
